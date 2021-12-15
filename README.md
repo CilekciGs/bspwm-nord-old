@@ -1,5 +1,7 @@
 # bspwm-nord
 
+![alt text](https://github.com/CilekciGs/bspwm-nord/blob/main/Screenshot_2021-12-15_21-25-18.png)
+
 ##### Terminal            : kitty
 ##### Program Launcher    : rofi
 ##### Bottom Bar	        : polybar
