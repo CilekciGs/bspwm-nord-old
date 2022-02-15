@@ -1,6 +1,8 @@
-# bspwm-nord
+# BSPWM Nord
 
 ![alt text](https://github.com/CilekciGs/bspwm-nord/blob/main/Screenshot.png)
+
+## Software Used
 
 ##### Terminal            : kitty
 ##### Program Launcher    : rofi
@@ -25,8 +27,11 @@
 ### For Custom Hotkeys edit ~/.config/sxhkd/sxhkdrc
 ### For Custom Startup Programs and Window Manager edit ~/.config/bspwm/bspwmrc
 
-## Wallpaper
-Changing the wallpaper:
+## Installation
+### Move all the files to your home directory
+```cp -r ./bspwm-nord/* ~/```
+### Rename config to .config (had to upload like that because of github)
+```mv ~/config/ ~/.config/```
+### Make bspwmrc executable
+```chmod +x ~/.config/bspwm/bspwmrc```
 
-Put your wallpapaer in ~/Wallpapers
-##### Edit ~/.config/bspwm/bspwmrc and change the line starting with feh --bg-fill
