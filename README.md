@@ -27,6 +27,14 @@
 ### For Custom Hotkeys edit ~/.config/sxhkd/sxhkdrc
 ### For Custom Startup Programs and Window Manager edit ~/.config/bspwm/bspwmrc
 
+## Fonts
+#### Siji-ng
+#### Noto_Sans
+#### Feather
+#### Iosevka-Nerd-Font
+#### Hurmit-Nerd-Font-Mono
+#### Fantasque-Sans-Mono-Nerd-Font
+
 ## Installation
 ### Move all the files to your home directory
 ```cp -r ./bspwm-nord/* ~/```
@@ -34,4 +42,6 @@
 ```mv ~/config/ ~/.config/```
 ### Make bspwmrc executable
 ```chmod +x ~/.config/bspwm/bspwmrc```
+### Make Rofi scripts executeable
+```chmod +x ~/.config/rofi/PowerMenu/powermenu.sh && chmod +x ~/.config/rofi/Launcher/launcher.sh```
 
