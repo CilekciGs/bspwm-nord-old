@@ -6,21 +6,21 @@
 
 ##### Terminal            : kitty
 ##### Program Launcher    : rofi
-##### Bottom Bar	        : polybar
+##### Top Bar	        : polybar
 ##### Web Browser	        : brave
-##### File Manager	      : nautilus
+##### File Manager	      : pcmanfm
 ##### Window Manager	    : bspwm
 ##### Hotkeys             : sxhkd 
 ##### Backlight Control   : xorg-xbacklight
 ##### Sound Backend	      : pulseaudio
 ##### Sound Control	      : pactl 
 ##### Networking Backend  : networkmanager
-##### Networking Frontend : nm-applet
 ##### Notifications	      : dunst
 ##### Polkit		          : lxsession
-##### Compositor	        : picom-ibhawgan
+##### Compositor	        : picom
 ##### Wallpaper	          : feh
-##### wmname		          : wmname (Q: What is wmname? A: It changes your wmname which fixes java ui)
+##### Theme               : Nordic-dark
+##### Icons               : kora
 
 ### Please Don't blindly install everything listed here 
 ### It's Pretty simple to edit the configs
