@@ -20,12 +20,18 @@ bspc rule -a telegram-desktop=^5
 
 ## Auto-Start
 xsetroot -cursor_name left_ptr &						## Fixes The Cursor Being An X
-polybar bottom &									## Polybar (Bar)
+polybar top &									## Polybar (Bar)
 /usr/bin/lxpolkit &									## Light X polkit (User account control)
 /usr/bin/dunst &									## Dunst (Notifications)
 picom --no-fading-openclose &						## Picom (Desktop Compositor)
 feh --randomize --bg-scale --no-fehbg ~/Wallpapers &	## Set the wallpaper with Feh
-telegram-desktop -startintray &						## Telegram Tray app
-nm-applet &										## Network Manager Tray Application
-wmname LG3D &									## Sets the window manager name to LG3D which fixes some display issues on java programs
-discord-canary &									## Starts up Discord
+wmname LG3D &
+libinput-gestures &
+
+## Touchpad Options
+xinput set-prop 'Synaptics TM3127-001' 'libinput Tapping Enabled' 1
+xinput set-prop 'Synaptics TM3127-001' 'libinput Natural Scrolling Enabled' 1
+
+# Configuration
+pactl set-sink-volume 0 30%
+xbacklight 30
