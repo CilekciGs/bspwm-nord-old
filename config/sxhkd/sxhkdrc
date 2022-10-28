@@ -7,7 +7,7 @@ super + Return
 	kitty fish
 
 # program launcher
-super + d
+super + space
 	~/.config/rofi/Launcher/launcher.sh
 
 # make sxhkd reload its configuration files:
@@ -59,7 +59,7 @@ XF86AudioMute
 
 # Start VPN
 XF86AudioPrev
-	nmcli connection up Frankfurt
+	/home/ra1n/git/yeelight-shell-scripts/yeelight-toggle.sh 0
 
 # Stop VPN
 XF86AudioNext

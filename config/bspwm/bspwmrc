@@ -13,19 +13,21 @@ bspc config borderless_monocle    true
 bspc config gapless_monocle       	 true
 bspc config focus_follows_pointer true
 
+bspc rule -a kitty desktop=^1
 bspc rule -a Brave-browser desktop=^2
-bspc rule -a Steam desktop=^6
-bspc rule -a discord desktop=^5
-bspc rule -a telegram-desktop=^5
+bspc rule -a firefox-bin desktop=^2
+bspc rule -a Steam desktop=^6 state=floating
+bspc rule -a Discord desktop=^5
+bspc rule -a Telegram desktop=^5
 
 ## Auto-Start
-xsetroot -cursor_name left_ptr &						## Fixes The Cursor Being An X
-polybar bottom &									## Polybar (Bar)
-/usr/bin/lxpolkit &									## Light X polkit (User account control)
-/usr/bin/dunst &									## Dunst (Notifications)
-picom --no-fading-openclose &						## Picom (Desktop Compositor)
-feh --randomize --bg-scale --no-fehbg ~/Wallpapers &	## Set the wallpaper with Feh
-telegram-desktop -startintray &						## Telegram Tray app
-nm-applet &										## Network Manager Tray Application
-wmname LG3D &									## Sets the window manager name to LG3D which fixes some display issues on java programs
-discord-canary &									## Starts up Discord
+
+polybar bottom &						## Polybar (Bar)
+/usr/bin/lxpolkit &						## Light X polkit (User account control)
+/usr/bin/dunst &						## Dunst (Notifications)
+picom --no-fading-openclose &					## Picom (Desktop Compositor)
+feh --randomize --bg-scale --no-fehbg ~/Wallpapers/1.jpg &	## Set the wallpaper with Feh
+telegram-desktop -startintray &					## Telegram Tray app
+wmname LG3D &							## Sets the window manager name to LG3D which fixes some display issues on java programs
+sudo hdparm -Y /dev/sda &					## Shuts the fucking hdd up
+sudo nbfc set -s 0						## Turns off the fans
